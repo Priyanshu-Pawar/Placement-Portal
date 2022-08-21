@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+p{
+    font-size: 20px;
+    font-family:cursive;
+}
+img{
+    width: 40%;
+}
+.article h2{
+    margin-left: 5%;
+    font-size: 30px;
+    margin-top: 2%;
+}
+.title{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 20px;
+}
+.title hr{
+    width: 20%;
+    margin-left: 40%;
+}
+.box{
+    display: flex;
+    padding: 3%;
+}
+.box2{
+    padding: 2%;
+    background-color: #29687238;
+}
+#img1{
+    float: left;
+    margin: 3%;
+}
+#img2{
+    float: right;
+    margin: 3%;
+}
+#img3{
+    float: left;
+    margin: 3%;
+}

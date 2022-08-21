@@ -1,0 +1,107 @@
+.bContainer{
+   margin-top: 6%;
+}
+
+.banner_bg {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+.container {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+.flash {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 6px 10px #888;
+}
+.lft_menu {
+    width: 23%;
+    min-height: 200px;
+}
+.lft_menu {
+    width: 23%;
+    float: left;
+    min-height: 200px;
+    padding: 0px 0px 0px 2%;
+    background-image: url(img1/subleft.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lft_menu h1 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 22px;
+    text-align: right;
+    padding: 70px 20px 0px 0px;
+}
+.rht_banner {
+    width: 75%;
+    float: left;
+}
+.content{
+    width: 96%;
+    float: left;
+    padding: 4% 2%;
+    background-color: #fff;
+    box-shadow: 1px 6px 10px #888;
+}
+.con_middle {
+    width: 48%;
+    padding: 0px 3%;
+    float: left;
+}
+.con_middle h1 {
+    color: #fff;
+    font-size: 24px;
+    padding: 5px 1%;
+    margin-bottom: 1%;
+    background-color: #169e96;
+}
+.con_middle h3 {
+    color: #090;
+    font-size: 22px;
+    margin: 2% 0px 5px 0px;
+}
+.con_middle p {
+    padding: 1% 0px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 17px;
+}
+.con_middle ul {
+    padding: 1% 0px 1% 2%;
+}
+.con_middle ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 0px 0px 0px 20px;
+}
+.con_rht {
+    width: 23%;
+    float: left;
+    margin-left: 10%;
+}
+.con_rht h2 {
+    font-size: 18px;
+    padding: 7px 10px 7px 15px;
+    color: #fff;
+    margin-bottom: 1px;
+    background-color: #5cb12f;
+}
+.con_rht a {
+    color: #fff;
+    display: block;
+    padding: 5px 15%;
+    border-bottom: 1px solid #fff;
+    background-color: #aaa;
+    outline: none;
+    text-decoration: none;
+}
+.con_rht a:hover{
+    color: black;
+}

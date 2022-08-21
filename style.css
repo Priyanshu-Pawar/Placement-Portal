@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.menu-bar {
+    background-color: linear-gradient(to right,#6db9ef, #7ce08a);
+}
+
+ .nav-link{
+     font-size: 16px;
+     color: #fff;
+     margin: 2px;
+ }
+ .navbar-nav{
+     text-align: right;
+ }
+ .menu-bar .navbar-toggler
+ {
+     padding-right: 0;
+     outline: none;
+     border: none;
+ }
+ .banner{
+     height: 80vh;
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img1/b2.jpg);
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     
+ }
+ .banner h1{
+     padding-top: 240px;
+     font-size: 50px;
+     letter-spacing: 6px;
+     font-weight: 600;
+     text-shadow: 0 0 30p rgba(0, 0, 0, 0.5);
+
+ }
+ .login
+ {
+     padding: 30px 190px ;
+     margin: -50px 6% 50px;
+     background-image: linear-gradient(to right,#6db9ef,#7ce08a); 
+ }
+ .login button{
+    padding: 10px 5px 10px 5px;
+    background-color: #130e83;
+    color: white;
+    font-weight: bold;
+    margin: 0px 80px;
+ }
+ /*------------------ para-----------------*/
+
+
+ 
+ .promo-title
+ {
+     font-size: 40px;
+   
+     margin-top: 50px;
+     font-family: fantasy;
+ }
+ .msg{
+     font-size: 20px;
+     font-family:sans-serif ;
+ }
+ 
+ /*-------------------service-------------*/
+ #services{
+     display: flex;
+     justify-content: space-around;
+     padding: 80px 0;
+ }
+ .service-img{
+     width: 280px;
+     margin-top: 10px;
+ }
+ .services{
+     padding: 20px;
+ }
+ .container{
+     display: flex;
+     justify-content: space-around;
+ }
+     
+
+ footer{
+	background:#111;
+	height: auto;
+	width: 1340px;
+	font-family: "Open Sans";
+	padding-top:40px;
+	color: #fff;
+	margin-top: 2px;
+
+}
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer-content h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+.social li{
+	margin: 0 10px;
+}
+.social a{
+	text-decoration: none;
+	color: #fff;
+}
+
+    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ 
