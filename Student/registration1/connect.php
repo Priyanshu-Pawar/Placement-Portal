@@ -30,14 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		move_uploaded_file($_FILES['img']['tmp_name'], $folder1);
 		move_uploaded_file($_FILES['pdf']['tmp_name'], $folder2);
 
-		$existSql = "SELECT * FROM `registration` WHERE email = '$email'";
+		$existSql = "SELECT * FROM `epiz_32432462_CollegePlacement` WHERE email = '$email'";
 		$result = mysqli_query($conn, $existSql);
 		$numExistRows = mysqli_num_rows($result);
 		if ($numExistRows > 0) {
 			$showError = "Username Already Exists!";
 		} else {
 
-			$sql = "INSERT INTO `registration`(`firstName`, `midName`, `lastName`, `gender`, `email`, `number`,`img`, `pdf`,`dt`) VALUES ('$firstName','$midName','$lastName','$gender','$email','$number','$filename1','$filename2',current_timestamp())";
+			$sql = "INSERT INTO `epiz_32432462_CollegePlacement`(`firstName`, `midName`, `lastName`, `gender`, `email`, `number`,`img`, `pdf`,`dt`) VALUES ('$firstName','$midName','$lastName','$gender','$email','$number','$filename1','$filename2',current_timestamp())";
 
 			$result = mysqli_query($conn, $sql);
 			if ($result) {

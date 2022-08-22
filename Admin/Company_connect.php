@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "companyinfo");
+$conn = mysqli_connect("sql313.epizy.com", "epiz_32432462", "hlRR4QSMi07", "epiz_32432462_CollegePlacement");
 if (!$conn) {
     die("Error" . mysqli_connect_error());
 }
@@ -21,14 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    $existSql = "SELECT * FROM `companyinfo` WHERE email = '$email' ";
+    $existSql = "SELECT * FROM `epiz_32432462_CollegePlacement` WHERE email = '$email' ";
     $result = mysqli_query($conn, $existSql);
     $numExistRows = mysqli_num_rows($result);
     if ($numExistRows > 0) {
         $showError = "Username Already Exists!";
     } else {
 
-        $sql =  "INSERT INTO `companyinfo`(`name`, `img`, `job`, `location`, `vacancy`, `salary`, `skills`, `exp`, `website`, `date`, `email`, `description`) VALUES ('$name','$img','$job','$location','$vacancy','$salary','$skills','$exp','$website','$date','$email','$description',current_timestamp())";
+        $sql =  "INSERT INTO `epiz_32432462_CollegePlacement`(`name`, `img`, `job`, `location`, `vacancy`, `salary`, `skills`, `exp`, `website`, `date`, `email`, `description`) VALUES ('$name','$img','$job','$location','$vacancy','$salary','$skills','$exp','$website','$date','$email','$description',current_timestamp())";
         // $sql = "INSERT INTO `users`(`firstName`, `midName`, `lastName`, `gender`, `email`, `number`, `dt`) VALUES ('$firstName','$midName','$lastName','$gender','$email','$number',current_timestamp())";
 
         $result = mysqli_query($conn, $sql);

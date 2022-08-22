@@ -12,7 +12,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 
     // $sql = "Select * from users where username= '$username'AND password='$password'";
-    $sql = "Select * from users where username= '$username'";
+    $sql = "Select * from epiz_32432462_CollegePlacement where username= '$username'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
     if ($num == 1) {

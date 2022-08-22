@@ -11,10 +11,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 <?php
 
-$server = "localhost";
-$firstName = "root";
-$lastName = "";
-$database = "registration";
+$server = "sql313.epizy.com";
+$firstName = "epiz_32432462";
+$lastName = "hlRR4QSMi07";
+$database = "epiz_32432462_CollegePlacement";
 
 $connect1 = mysqli_connect($server, $firstName, $lastName, $database);
 
@@ -48,7 +48,7 @@ $connect1 = mysqli_connect($server, $firstName, $lastName, $database);
 //     }
 // }
 
-$query1 = "SELECT * FROM `registration`";
+$query1 = "SELECT * FROM `epiz_32432462_CollegePlacement`";
 $result = mysqli_query($connect1, $query1);
 
 ?>

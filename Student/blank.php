@@ -12,8 +12,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 <?php
 
 include 'profile_upload.php';
-$con = mysqli_connect("localhost", "root", "", "upload");
-$sql = "SELECT * FROM `upload`";
+$con = mysqli_connect("sql313.epizy.com", "epiz_32432462", "hlRR4QSMi07", "epiz_32432462_CollegePlacement");
+$sql = "SELECT * FROM `epiz_32432462_CollegePlacement`";
 $que = mysqli_query($con, $sql);
 
 $users = mysqli_fetch_all($que, MYSQLI_ASSOC);  // Fetch all data from database

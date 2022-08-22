@@ -11,10 +11,10 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 <?php
 
-$server = "localhost";
-$name = "root";
-$company = "";
-$database = "eligible";
+$server = "sql313.epizy.com";
+$name = "epiz_32432462";
+$company = "hlRR4QSMi07";
+$database = "epiz_32432462_CollegePlacement";
 
 $conn = mysqli_connect($server, $name, $company, $database);
 
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    $existSql = "SELECT * FROM `eligible` WHERE name = '$name' ";
+    $existSql = "SELECT * FROM `epiz_32432462_CollegePlacement` WHERE name = '$name' ";
     $result = mysqli_query($conn, $existSql);
     $numExistRows = mysqli_num_rows($result);
     if ($numExistRows > 0) {
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
 
         // $sql =  "INSERT INTO `eligible`(`name`, `cname`, `job`, `location`, `date`, `time`, `yes`) VALUES ('$name','$cname','$job','$location','$date','$time','$yes')";
-        $sql = "INSERT INTO `eligible`( `name`, `company`, `jobRole`, `location`, `date`, `time`, `EorN`) VALUES ('$name','$cname','$job','$location','$date','$time','$yes')";
+        $sql = "INSERT INTO `epiz_32432462_CollegePlacement`( `name`, `company`, `jobRole`, `location`, `date`, `time`, `EorN`) VALUES ('$name','$cname','$job','$location','$date','$time','$yes')";
 
         $res = mysqli_query($conn, $sql);
         // $result = mysqli_query($conn, $sql);

@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //  CHECK WHETHER THIS USERNAME EXISTS
 
-    $existSql = "SELECT * FROM `users` WHERE username = '$username'";
+    $existSql = "SELECT * FROM `epiz_32432462_CollegePlacement` WHERE username = '$username'";
     $result = mysqli_query($conn, $existSql);
     $numExistRows = mysqli_num_rows($result);
     if ($numExistRows > 0) {
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //    $exists = false;
         if ($password == $cpassword) {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `users` (`name`, `username`, `password`, `dt`) VALUES (  '$name','$username', '$hash', current_timestamp())
+            $sql = "INSERT INTO `epiz_32432462_CollegePlacement` (`name`, `username`, `password`, `dt`) VALUES (  '$name','$username', '$hash', current_timestamp())
       ";
 
             $result = mysqli_query($conn, $sql);

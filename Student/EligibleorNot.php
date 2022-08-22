@@ -12,8 +12,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 <?php
 
 include 'profile_upload.php';
-$con = mysqli_connect("localhost", "root", "", "upload");
-$sql = "SELECT * FROM `upload`";
+$con = mysqli_connect("sql313.epizy.com", "epiz_32432462", "hlRR4QSMi07", "epiz_32432462_CollegePlacement");
+$sql = "SELECT * FROM `epiz_32432462_CollegePlacement`";
 $que = mysqli_query($con, $sql);
 
 $users = mysqli_fetch_all($que, MYSQLI_ASSOC);  // Fetch all data from database
@@ -22,10 +22,10 @@ $users = mysqli_fetch_all($que, MYSQLI_ASSOC);  // Fetch all data from database
 ?>
 
 <?php
-$server = "localhost";
-$name = "root";
-$company = "";
-$database = "eligible";
+$server = "sql313.epizy.com";
+$name = "epiz_32432462";
+$company = "hlRR4QSMi07";
+$database = "epiz_32432462_CollegePlacement";
 
 $conn = mysqli_connect($server, $name, $company, $database);
 
@@ -33,7 +33,7 @@ if (!$conn) {
     die("Error" . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM `eligible` ORDER BY time DESC";
+$sql = "SELECT * FROM `epiz_32432462_CollegePlacement` ORDER BY time DESC";
 $res = mysqli_query($conn, $sql);
 $num = mysqli_num_rows($res);
 

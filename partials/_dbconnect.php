@@ -1,9 +1,9 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
+$server = "sql313.epizy.com";
+$username = "epiz_32432462";
+$password = "hlRR4QSMi07";
 $image = "";
-$database = "users";
+$database = "epiz_32432462_CollegePlacement";
 
 $conn = mysqli_connect($server, $username, $password, $database);
 

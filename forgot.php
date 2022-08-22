@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'partials/_dbconnect.php';
     $username = $_POST["username"];
    
-    $sql = "Select * from users where username= '$username'";
+    $sql = "Select * from epiz_32432462_CollegePlacement where username= '$username'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
     if ($num == 1) {
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["submit"])) {
             $password = $_POST["password"]; //enter the password on given box
             $hash = password_hash($password, PASSWORD_DEFAULT);  // it create hash of that password when we enter the pass.
-            $sql = " UPDATE `users` SET  `password`='$hash ' WHERE `username`='$_POST[username]'";  // it will update the pass.
+            $sql = " UPDATE `epiz_32432462_CollegePlacement` SET  `password`='$hash ' WHERE `username`='$_POST[username]'";  // it will update the pass.
             if (mysqli_query($conn, $sql)) {
                 $update = true;
             }
